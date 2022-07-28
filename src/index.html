@@ -15,27 +15,19 @@
     <h1>Leaderboard</h1>
     <main>
       <section class="first-column">
-        <header class="firs-header">
+        <header class="first-header">
           <h2 class="first-heading">Recent Scores</h2>
           <button class="button">Refresh</button>
         </header>
-        <ul class="scores-listing"></ul>
+        <ul class="scoreslist"></ul>
       </section>
       <section class="second-column">
-        <h2 class="secon-heading">Add Your Score</h2>
+        <h2 class="second-heading">Add Your Score</h2>
         <form action="#">
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-          /><br />
-          <input
-            type="number"
-            id="score"
-            name="score"
-            placeholder="Your Score"
-          /><br />
+          <input type="text" id="name" name="name" placeholder="Name"/>
+          <br />
+          <input type="number" id="score" name="score" placeholder="Scores" />
+          <br />
           <input type="submit" id="submit-btn" value="Submit" />
         </form>
       </section>
