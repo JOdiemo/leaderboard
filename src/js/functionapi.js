@@ -1,6 +1,6 @@
 const userName = document.querySelector('#name');
 const userScore = document.querySelector('#score');
-const myURL = "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AoSvcvAve7z0Jc7kb3OL/scores/"
+const myURL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/AoSvcvAve7z0Jc7kb3OL/scores/';
 const savetoURL = async () => {
   const response = await fetch(myURL, {
     method: 'POST',

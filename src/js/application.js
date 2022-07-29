@@ -1,7 +1,6 @@
 import { getfromURL } from './functionapi.js';
 
 const playerList = async () => {
-  console.log("here")
   const users = await getfromURL();
   users.result.sort((a, b) => b.score - a.score);
   const list = document.querySelector('.userboard');
@@ -17,6 +16,6 @@ const playerList = async () => {
 const clearInputs = () => {
   document.querySelector('#name').value = '';
   document.querySelector('#score').value = '';
-}
+};
 
 export { playerList, clearInputs };
